@@ -11,7 +11,7 @@ for (int i = 0; i < mat.GetLength(0); i++)
     Console.WriteLine();
 }
 
-// Fazer média
+// Fazer média:
 for (int i = 0; i < mat.GetLength(0); i++)
 {
 	double media = 0;
@@ -29,7 +29,6 @@ for (int i = 0; i < mat.GetLength(0); i++)
 Console.WriteLine("Matriz final:");
 for (int i = 0; i < mat.GetLength(0); i++)
 {
-    double media = 0;
     for (int j = 0; j < mat.GetLength(1); j++)
     {
 		Console.Write("\t {0} \t", mat[i, j]);
