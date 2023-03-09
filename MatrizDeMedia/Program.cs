@@ -27,11 +27,15 @@ for (int i = 0; i < mat.GetLength(0); i++)
 
 // Imprimir matriz:
 Console.WriteLine("Matriz final:");
+ConsoleColor aux = Console.ForegroundColor;
+
 for (int i = 0; i < mat.GetLength(0); i++)
 {
     for (int j = 0; j < mat.GetLength(1); j++)
     {
-		Console.Write("\t {0} \t", mat[i, j]);
+		if (j == (mat.GetLength(1) - 1)) Console.ForegroundColor = ConsoleColor.Red;
+		Console.Write("\t {0:F2} \t", mat[i, j]);
     }
+	Console.ForegroundColor = aux;
     Console.WriteLine();
 }
