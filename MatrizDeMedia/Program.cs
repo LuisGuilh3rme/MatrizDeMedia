@@ -1,7 +1,6 @@
 ﻿double[,] mat = new double[5, 3];
 
 // Popular matriz:
-
 for (int i = 0; i < mat.GetLength(0); i++)
 {
 	for (int j = 0; j < (mat.GetLength(1) - 1); j++)
@@ -13,7 +12,6 @@ for (int i = 0; i < mat.GetLength(0); i++)
 }
 
 // Fazer média
-
 for (int i = 0; i < mat.GetLength(0); i++)
 {
 	double media = 0;
